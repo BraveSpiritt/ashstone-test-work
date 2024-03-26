@@ -15,7 +15,7 @@ export const useSearch = () => {
   return context;
 };
 
-export const SearchProvider: React.FC<HTMLCollection<Element>> = ({ children }) => {
+export const SearchProvider: React.FC<any> = ({ children }) => {
   const [searchQuery, setSearchQuery] = useState('');
 
   return (
