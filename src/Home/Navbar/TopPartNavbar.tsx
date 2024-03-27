@@ -22,8 +22,7 @@ function TopPartNavbar() {
   const handleSearchBarOpen = () => setSearchBarOpen(!searchBarOpen);
 
   const handleClick = (): void => {
-    // TODO: Clear the search input
-    console.log("clicked the clear icon...");
+    setSearchQuery('')
   };
 
   return (
@@ -57,7 +56,7 @@ function TopPartNavbar() {
               endAdornment: (
                 <InputAdornment
                   position="end"
-                  style={{ display: showClearIcon }}
+                  style={{ display: showClearIcon, cursor: 'pointer' }}
                   onClick={handleClick}
                 >
                   <ClearOutlinedIcon />
